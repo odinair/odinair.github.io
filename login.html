@@ -12,26 +12,21 @@ input:required {
 
 </style>
 <script>
-function checkRegistration(){
-    var form_valid = (document.getElementById('some_input').value == 'google');
-    if(!form_valid){
-        alert('Given data is incorrect');
-        return false;
-    }
-    return true;
-}
+	function checkRegistration(){
+	    var form_valid = (document.getElementById('some_input').value == 'google');
+	    if(!form_valid){
+		alert('Given data is incorrect');
+		return false;
+	    }
+	    return true;
+	}
 </script>
 <body>
-  <section class="loginform cf">
-  <form name="login" onsubmit="return checkRegistration()" method="get" action="index.html" accept-charset="utf-8">
-      <ul>
-          <li><label for="usermail">Email</label>
-          <input id ="user" type="text" name="usermail" placeholder="yourname@email.com" value= "" required></li>
-         
-          <li>
-          <input type="submit" value="Login"></li>
-      </ul>
-  </form>
+	<form onsubmit="return checkRegistration()" method="get" action="http://google.com">
+	    Write google to go to google..<br/>
+	    <input type="text" id="some_input" value=""/>
+	    <input type="submit" value="google it"/>
+	</form>
   </section>
 </body>
 </html>

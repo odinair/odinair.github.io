@@ -9,28 +9,21 @@ html {
 input:required {
 	border: 1px solid red;
 }
-function validateForm()
+
+
+if($('#user').val() == "123"))
 {
-var x=document.forms["login"]["username"].value;
-if (x==null || x=="")
-  {
-  alert("Please fill out the username");
-  return false;
-  }
-
-if(x=="123")
-	{
 	window.location.replace("http://stackoverflow.com");
-	}
-
 }
+
+
 </style>
 <body>
   <section class="loginform cf">
   <form name="login" action="www.google.com" method="get" accept-charset="utf-8">
       <ul>
           <li><label for="usermail">Email</label>
-          <input type="text" name="usermail" placeholder="yourname@email.com" required></li>
+          <input id ="user" type="text" name="usermail" placeholder="yourname@email.com" required></li>
           <li><label for="password">Password</label>
           <input type="password" name="password" placeholder="password" required></li>
           <li>
